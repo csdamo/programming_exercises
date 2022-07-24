@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<input/>
+<button>Compare com meu segredo</button>
+
+<script type="text/javascript">
+
+	var segredo = 5;
+	var input = document.querySelector("input"); // faz um link entre a tag input e a variável input
+
+	function verifica(){
+		if(input.value == segredo){
+			alert("Você acertou!!!");
+		}
+		else{
+			alert("Você errou!!!");
+		}	
+	}
+
+
+	var button = document.querySelector("button");  // faz um link entre a tag button e a variável button
+	button.onclick = verifica; // copia o código da função para dentro da variável button, sendo assim, quando a variável button for clicada será executado o código copiado
+
+
+
+
+
+</script>

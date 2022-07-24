@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	
+	function pulaLinha() {
+
+	    document.write("<br>");
+	    document.write("<br>");
+	}
+
+	function mostra(frase) {
+
+	    document.write(frase);
+	    pulaLinha();
+	}
+
+	var quantidadePessoas = parseInt(prompt("Quantidade de pessoas?"));
+	var totalIdaade = 0;
+
+	var numero = 0;
+	while( numero < quantidadePessoas){
+		var idade = parseInt(prompt("Informe a idade"));
+		numero++;
+		totalIdaade += idade;
+	}
+
+	mostra("A média das idades é " + totalIdaade / quantidadePessoas);
+
+	mostra("FIM!");
+
+</script>

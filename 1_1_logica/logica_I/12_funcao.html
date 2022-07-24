@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	
+	function pularLinha(){
+		document.write("<br><br>");
+	}
+
+	function escreve(conteudoParaMostrar){
+		document.write(conteudoParaMostrar);
+		pularLinha()
+	}
+
+	escreve("Teste_1");  // conteudoParaMostrar = Teste_1
+	escreve("Teste_2");  // conteudoParaMostrar = Teste_2
+	escreve("Teste_3");  // conteudoParaMostrar = Teste_3
+	escreve();  // undefined, pois não foi dado parâmetros
+
+
+</script>

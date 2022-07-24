@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+function calculaImc(peso, altura){
+    var imc = Math.round(peso / (altura * altura));
+    return imc;
+}
+
+var imcCris = calculaImc(50, 1.57);
+var imcAna = calculaImc(68, 1.78);
+
+if(imc <= 18.5){
+    mostra("você está com peso abaixo do recomendado");
+}
+else if(imc >= 35){
+    mostra("Vocês está com o peso acima do recomendado");
+}
+else{
+    mostra("Seu está adequado");
+}
+
+
+
+mostra(imcCris);
+mostra(imcAna);
+
+</script>

@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+function repete(){
+    
+}
+
+var limite = parseInt(prompt("Até que ano você quer saber se teve copa"))
+
+var ano = 1930;
+
+
+while(ano <= limite){
+    mostra("Teve copa no ano de " + ano);
+    ano += 4;
+}
+
+
+
+</script>

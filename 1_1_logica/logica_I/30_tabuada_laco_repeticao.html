@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+function tabuada(multiplicador){
+    for(i = 0; i <=10; i++){
+        mostra(multiplicador + " x " + i + " = " + (multiplicador * i));
+    }
+}
+var multiplicador = parseInt(prompt("Informe o multiplicador"));
+tabuada(multiplicador);
+
+
+</script>

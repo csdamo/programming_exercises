@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia (n){
+        return Math.round(Math.random()*n); // multiplicar *100, *1000, etc., aumenta o rance do random
+    }
+
+    var tentativas = 3;
+    var numeroPensado = sorteia(10);
+
+    console.log(numeroPensado); // mostrará no console
+
+
+    for(var i = 0; i < 3; i++){
+        var chute = parseInt(prompt("Adivinhe o número"));
+         --tentativas;
+
+        if(numeroPensado == chute){
+            mostra("Acertou!");
+            break;
+        }
+        else if(numeroPensado > chute){
+            alert("o número é maior");
+        }
+        else{
+            alert("o número é menor");
+        }
+
+        if(tentativas > 0){
+            alert("Tente novamente. Você tem mais " + (tentativas) + " tentativas");
+        }
+        else{
+            alert("Suas tentativas terminaram");
+        }
+    }
+
+
+    if(tentativas == 0){
+        mostra("... o número cero é " + numeroPensado);
+    }
+
+
+</script>
