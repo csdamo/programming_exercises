@@ -1,0 +1,4 @@
+/.metadata/
+venv
+.dist
+__pycache__
