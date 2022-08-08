@@ -1,8 +1,8 @@
-from fila_normal import FilaNormal
-from fila_prioritario import FilaPrioridade
+from fabrica_fila import FabricaFila
+# from fila_normal import FilaNormal
+# from fila_prioritario import FilaPrioridade
 
-fila_teste = FilaPrioridade()
-fila_teste1 = FilaNormal()
+fila_teste = FabricaFila.pega_fila('prioritaria')
 fila_teste.atualiza_fila()
 fila_teste.atualiza_fila()
 fila_teste.atualiza_fila()
