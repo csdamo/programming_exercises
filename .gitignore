@@ -5,3 +5,14 @@ __pycache__
 /__pycache__/
 ../__pycache__/
 .mypy_cache
+.settings
+/.settings
+/.settings/
+/bin/
+bin
+.classpath
+.project
+.plugins
+.plugins/
+/.plugins
+/.plugins/
